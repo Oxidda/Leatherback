@@ -6,6 +6,7 @@
     <Description>Leatherback service logica.</Description>
     <RepositoryUrl>https://github.com/Oxidda/Leatherback</RepositoryUrl>
     <FileVersion>0.0.1.0</FileVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

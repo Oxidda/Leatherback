@@ -6,6 +6,7 @@
     <FileVersion>1.0.1.0</FileVersion>
     <RepositoryType>https://github.com/Oxidda/Leatherback</RepositoryType>
     <Description>Some basic logic for Leatherback.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
