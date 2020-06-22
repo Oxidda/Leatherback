@@ -29,4 +29,4 @@ jobs:
     - name: Pack NuGet
       run: dotnet pack Leatherback.Package.sln --version-suffix 'dev-${{ steps.date.outputs.date }}'
     - name: Publish NuGet
-      run: dotnet nuget push **/*.nupkg  -k ${{ secrets.NUGETAPIKEY }} --skip-duplicate -s https://api.nuget.org/v3/index.json  -n
+      run: dotnet nuget push **/*.nupkg  -k ${{ secrets.NUGETAPIKEY }} --skip-duplicate -s https://api.nuget.org/v3/index.json  -n 1
