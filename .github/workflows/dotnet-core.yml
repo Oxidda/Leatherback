@@ -18,8 +18,15 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Install dependencies
-      run: dotnet restore Leatherback.Package
+      run: dotnet restore Leatherback.Package.sln
     - name: Build
-      run: dotnet build Leatherback.Package --configuration Release --no-restore
+      run: dotnet build --configuration Release --no-restore Leatherback.Package.sln
     - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test --no-restore --verbosity normal Leatherback.Package.sln   
+    
+    - name: Publish NuGet
+      uses: brandedoutcast/publish-nuget@v2.5.2
+      with:
+       PROJECT_FILE_PATH: Leatherback.Package.sln
+       PACKAGE_NAME: Leatherback
+       NUGET_KEY: ${{ secrets.NUGETAPIKEY }}
