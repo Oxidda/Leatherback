@@ -6,7 +6,7 @@
     <FileVersion>1.0.1.0</FileVersion>
     <RepositoryUrl>https://github.com/Oxidda/Leatherback</RepositoryUrl>
     <Description>Leatherback DataAccess components</Description>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
