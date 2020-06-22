@@ -20,14 +20,10 @@ jobs:
     - name: Install dependencies
       run: dotnet restore Leatherback.Package.sln
     - name: Build
-      run: dotnet build --configuration Release --no-restore Leatherback.Package.sln
+      run: dotnet build --configuration Release --no-restore Leatherback.Package.sln --version-suffix 'dev-${{ steps.date.outputs.date }}'
     - name: Test
-      run: dotnet test --no-restore --verbosity normal Leatherback.Package.sln   
-    
+      run: dotnet test --no-restore --verbosity normal Leatherback.Package.sln    
     - name: Publish NuGet
-      uses: brandedoutcast/publish-nuget@v2.5.2
-      with:
-       PROJECT_FILE_PATH: Leatherback.Package.sln
-       PACKAGE_NAME: Leatherback
-       NUGET_KEY: ${{ secrets.NUGETAPIKEY }}
-       VERSION_REGEX: (.*)
+      run: dotnet pack Leatherback.Package.sln --version-suffix 'dev-${{ steps.date.outputs.date }}'
+      
+     
