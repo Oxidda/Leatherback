@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Install dependencies
-      run: dotnet restore Leatherback.Package
+      run: dotnet restore
     - name: Build
       run: dotnet build Leatherback.Package --configuration Release --no-restore
     - name: Test
