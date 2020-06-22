@@ -27,6 +27,6 @@ jobs:
     - name: Publish NuGet
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
-       PROJECT_FILE_PATH: ~/Leatherback
+       PROJECT_FILE_PATH: Leatherback.Package.sln
        PACKAGE_NAME: Leatherback
        NUGET_KEY: ${{ secrets.NUGETAPIKEY }}
