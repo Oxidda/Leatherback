@@ -22,4 +22,9 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore Leatherback.Package.sln
     - name: Test
-      run: dotnet test --no-restore --verbosity normal Leatherback.Package.sln
+      run: dotnet test --no-restore --verbosity normal Leatherback.Package.sln   
+    
+    - name: Publish NuGet
+      uses: brandedoutcast/publish-nuget@v2.5.2
+      
+
