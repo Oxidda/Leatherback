@@ -26,6 +26,6 @@ jobs:
     - name: Pack NuGet
       run: dotnet pack Leatherback.Package.sln --version-suffix 'dev-${{ steps.date.outputs.date }}'
     - name: Publish NuGet
-      run: dotnet nuget push *.nupkg -k ${( secrets.NUGETAPIKEY )} --skip-duplicate
+      run: dotnet nuget push *.nupkg -k ${{ secrets.NUGETAPIKEY }} --skip-duplicate
       
      
