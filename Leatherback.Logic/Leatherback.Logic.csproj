@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -12,5 +12,11 @@
   <ItemGroup>
     <ProjectReference Include="..\Leatherback.DataAccess\Leatherback.DataAccess.csproj" />
   </ItemGroup>
+
+  <PropertyGroup>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionSuffix>dev</VersionSuffix>
+    <PackageTags>api</PackageTags>
+  </PropertyGroup>
 
 </Project>

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyVersion>0.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
+    <FileVersion>0.0.1.0</FileVersion>
     <RepositoryUrl>https://github.com/Oxidda/Leatherback</RepositoryUrl>
     <Description>Leatherback DataAccess components</Description>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
@@ -18,4 +18,9 @@
     <ProjectReference Include="..\Leatherback.Core\Leatherback.Core.csproj" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionSuffix>dev</VersionSuffix>
+    <PackageTags>api</PackageTags>
+  </PropertyGroup>
 </Project>
