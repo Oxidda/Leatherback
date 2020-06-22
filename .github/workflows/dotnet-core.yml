@@ -23,7 +23,9 @@ jobs:
       run: dotnet build --configuration Release --no-restore Leatherback.Package.sln --version-suffix 'dev-${{ steps.date.outputs.date }}'
     - name: Test
       run: dotnet test --no-restore --verbosity normal Leatherback.Package.sln    
-    - name: Publish NuGet
+    - name: Pack NuGet
       run: dotnet pack Leatherback.Package.sln --version-suffix 'dev-${{ steps.date.outputs.date }}'
+    - name: Publish NuGet
+      run: dotnet nuget push *.nupkg -k $({ secrets.NUGETAPIKEY }) --skip-duplicate
       
      
