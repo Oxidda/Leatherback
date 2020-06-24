@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leatherback.Test", "Leatherback.Test\Leatherback.Test.csproj", "{1A880C17-2CC3-475E-A9FE-AAEFFB1805C9}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leatherback.DataAccess", "Leatherback.DataAccess\Leatherback.DataAccess.csproj", "{772517DA-A650-4DF9-9386-5CA4F31BEC65}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leatherback.Service", "Leatherback.Service\Leatherback.Service.csproj", "{5C45328C-C06A-4776-9F08-FAB751D35DDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leatherback", "Leatherback\Leatherback.csproj", "{5C45328C-C06A-4776-9F08-FAB751D35DDF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leatherback.Logic", "Leatherback.Logic\Leatherback.Logic.csproj", "{EB87E07F-CC86-4020-9DCC-CDB7F5FA21F9}"
 EndProject
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1A880C17-2CC3-475E-A9FE-AAEFFB1805C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A880C17-2CC3-475E-A9FE-AAEFFB1805C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A880C17-2CC3-475E-A9FE-AAEFFB1805C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A880C17-2CC3-475E-A9FE-AAEFFB1805C9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{772517DA-A650-4DF9-9386-5CA4F31BEC65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{772517DA-A650-4DF9-9386-5CA4F31BEC65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{772517DA-A650-4DF9-9386-5CA4F31BEC65}.Release|Any CPU.ActiveCfg = Release|Any CPU

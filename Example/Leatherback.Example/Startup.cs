@@ -1,12 +1,12 @@
+using Leatherback.Example.DbContext;
 using Leatherback.Service.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Leatherback.Test;
 
-namespace Turtle.Test
+namespace Leatherback.Example
 {
     public class Startup
     {
@@ -21,7 +21,7 @@ namespace Turtle.Test
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.UseLeatherback<LeatherbackTestDbContext>("Server=.;Database=Turtle;Trusted_Connection=True;");
+            services.UseLeatherback<LeatherbackExampleDbContext>("Server=.;Database=LeatherbackExample;Trusted_Connection=True;");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -32,15 +32,14 @@ namespace Turtle.Test
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
-
             app.UseRouting();
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
     }
 }
-
-

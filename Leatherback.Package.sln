@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leatherback.DataAccess", "L
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leatherback.Logic", "Leatherback.Logic\Leatherback.Logic.csproj", "{FC2F9775-0284-46ED-9B98-A43A35915FF7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leatherback", "Leatherback.Service\Leatherback.csproj", "{F002D41B-0C92-4EE0-A17F-C9A36CC7FDBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leatherback", "Leatherback\Leatherback.csproj", "{F002D41B-0C92-4EE0-A17F-C9A36CC7FDBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
