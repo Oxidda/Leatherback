@@ -15,14 +15,6 @@ Initially I named this project turtle, but now its just called Leatherback, whic
 
 
 ## How to use this:
-
-1) Define a few models, and either use Data Annotation, or all the other options available in EF.
-2) If you want a special Model for search operations, define one aswel.
-3) Create a DBContext and define all the DbSets you want tables for.
-4) Register this Framework with:
-       ```services.UseTurtle<YourDbContextHere>(YourConnectionStringHere);```
-5) Run EF Migrations.
-6) Run your solution, you should have a working API.
-   
+Check the quickstart [here](https://github.com/Oxidda/Leatherback/wiki/Leatherback-Quickstart).
  
  
