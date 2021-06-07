@@ -13,9 +13,9 @@ jobs:
    - name: Setup .NET Core
      uses: actions/setup-dotnet@v1.8.0
    - name: Install dependencies
-     run: dotnet restore ~\Leatherback.Package.sln
+     run: dotnet restore ~\Leatherback.sln
    - name: Build
-     run: dotnet build --configuration Release --no-restore ~\Leatherback.Package.sln
+     run: dotnet build --configuration Release --no-restore ~\Leatherback.sln
      
 #    - name:Test
 #    run: dotnet test --no-restore --verbosity normal
